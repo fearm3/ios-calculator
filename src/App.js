@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import menu from "../src/assets/menu.png";
+import comma from "./components/comma";
 
 import "./App.css";
 import Button from "../src/components/button/Button";
@@ -6,7 +8,11 @@ function App() {
   const [value, setValue] = useState("0");
   const [memory, setMemory] = useState(null);
   const [operator, setOperator] = useState(null);
-  const [decimal,setDecimal]=useState()
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    setTime(new Date());
+  }, [time]);
 
   const handleButtonPress = (content) => () => {
     const num = parseFloat(value);
@@ -121,18 +127,29 @@ function App() {
       } else if (operator === "÷") {
         setValue((memory / parseFloat(value)).toString());
       }
-
       setMemory(null);
       setOperator(null);
       return;
     }
 
-    setValue(parseFloat(num + content).toString());
+    if (value[value.length - 1] === ".") {
+      setValue(value + content);
+    } else {
+      setValue(parseFloat(num + content).toString());
+    }
   };
   return (
     <div className="App">
-      <div className="top">19:25</div>
-      <div className="display">{value}</div>
+      <div className="top">
+        <div className="time">
+          {time.getHours().toString().padStart(2, "0")}:
+          {time.getMinutes().toString().padStart(2, "0")}
+        </div>
+        <div className="menu">
+          <img src={menu} alt="menu" />
+        </div>
+      </div>
+      <div className="display">{comma(value)}</div>
       <div className="buttons">
         <Button
           onButtonClick={handleButtonPress}
@@ -158,6 +175,7 @@ function App() {
         <Button onButtonClick={handleButtonPress} content="." />
         <Button onButtonClick={handleButtonPress} content="=" />
       </div>
+      <div className="bottom"></div>
     </div>
   );
 }

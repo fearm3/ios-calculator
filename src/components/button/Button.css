@@ -9,8 +9,12 @@
   align-items: center;
   text-align: center;
   width: 110px;
+  transition: filter 0.3s ease-in;
 }
-
+.Button:active,
+.Button:focus{
+  filter:brightness(200%);
+}
 .Button.zero {
   width:250px;
   grid-column: 1/ span 2;
