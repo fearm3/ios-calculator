@@ -1,7 +1,55 @@
 .App {
-  text-align: center;
+  width: 563px;
+  height: 1218px;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  padding: 20px;
 }
 
+.top {
+  height: 250px;
+  padding: 0 20px;
+}
+
+.display {
+  font-size: 130px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+/* 
+.bottom{
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +83,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
