@@ -5,7 +5,27 @@
   display: flex;
   font-size: 45px;
   height: 110px;
-  justify-self:  center;
+  justify-content:  center;
   align-items: center;
+  text-align: center;
   width: 110px;
+}
+
+.Button.zero {
+  width:250px;
+  grid-column: 1/ span 2;
+  border-radius: 57.5px;
+  position: relative;
+  justify-content:flex-start;
+  padding: 43px;
+}
+
+.Button.function{
+  color:black;
+  background: #a5a5a5;
+}
+
+.Button.operator{
+  color:white;
+  background: #f1a33c;
 }
