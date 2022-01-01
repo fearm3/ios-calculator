@@ -3,12 +3,12 @@
   border-radius: 50%;
   cursor: pointer;
   display: flex;
-  font-size: 45px;
-  height: 110px;
+  font-size: 2.812rem;
+  height: 6.88rem;
   justify-content:  center;
   align-items: center;
   text-align: center;
-  width: 110px;
+  width: 6.88rem;
   transition: filter 0.3s ease-in;
 }
 .Button:active,
@@ -16,12 +16,12 @@
   filter:brightness(200%);
 }
 .Button.zero {
-  width:250px;
+  width:15.63rem;
   grid-column: 1/ span 2;
-  border-radius: 57.5px;
+  border-radius: 3.6rem;
   position: relative;
   justify-content:flex-start;
-  padding: 43px;
+  padding: 2.69rem;
 }
 
 .Button.function{

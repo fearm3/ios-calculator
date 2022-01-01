@@ -1,10 +1,10 @@
 .App {
-  width: 563px;
-  height: 1218px;
+  width: 35.18rem;
+  height: 76.12rem;
   background: black;
   color: white;
-  border-radius: 50px;
-  padding: 20px;
+  border-radius: 3.13rem;
+  padding: 1.25rem;
   position: relative;
   margin: auto;
 }
@@ -12,32 +12,32 @@
 .top {
   display: flex;
   justify-content: space-between;
-  height: 250px;
-  padding: 0 20px;
+  height: 15.63rem;
+  padding: 0 1.25rem;
 }
 
 .display {
-  font-size: 130px;
-  margin-bottom: 20px;
+  font-size: 8.125rem;
+  margin-bottom: 1.25rem;
   font-weight: 300;
   text-align: right;
 }
 
 .buttons {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25rem;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
 }
 
 .bottom{
 position: absolute;
-width: 200px;
-height: 5px;
+width: 12.5rem;
+height: 0.312rem;
 background: white;
-bottom: 10px;
+bottom: .625rem;
 left: 50%;
-border-radius: 4px;
+border-radius: 0.25rem;
 transform: translateX(-50%);
 }
 
