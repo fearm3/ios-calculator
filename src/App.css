@@ -1,43 +1,44 @@
 .App {
-  width: 35.18rem;
-  height: 76.12rem;
+  width: 17.6rem;
+  height: 38.06rem;
   background: black;
   color: white;
-  border-radius: 3.13rem;
-  padding: 1.25rem;
+  border-radius: 1.57rem;
+  padding: 0.63rem;
   position: relative;
   margin: auto;
+  margin-top: 5rem;
 }
 
 .top {
   display: flex;
   justify-content: space-between;
-  height: 15.63rem;
-  padding: 0 1.25rem;
+  height: 7.81rem;
+  padding: 0 0.63rem;
 }
 
 .display {
-  font-size: 8.125rem;
-  margin-bottom: 1.25rem;
+  font-size: 4.06rem;
+  margin-bottom: 0.63rem;
   font-weight: 300;
   text-align: right;
 }
 
 .buttons {
   display: grid;
-  grid-gap: 1.25rem;
+  grid-gap: 0.63rem;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
 }
 
 .bottom{
 position: absolute;
-width: 12.5rem;
-height: 0.312rem;
+width: 6.25rem;
+height: 0.156rem;
 background: white;
-bottom: .625rem;
+bottom: .312rem;
 left: 50%;
-border-radius: 0.25rem;
+border-radius: 0.125rem;
 transform: translateX(-50%);
 }
 
